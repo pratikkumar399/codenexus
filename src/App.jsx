@@ -14,7 +14,7 @@ const Layout = () => {
         <Outlet />
       </div>
 
-      <div className={`bg-primary  ${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`bg-gray-900  ${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Footer />
         </div>
