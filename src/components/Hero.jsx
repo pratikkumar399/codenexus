@@ -1,7 +1,6 @@
 import React from 'react';
-import { hero } from '../assets';
-import GetStarted from '../components/GetStarted';
-
+import Logo from '../assets/logo.svg'
+import { Link } from 'react-router-dom';
 const Hero = () => {
     return (
         <>
@@ -19,19 +18,19 @@ const Hero = () => {
                             <p className="text-sm md:text-base text-gray-50 mb-4">
                                 Welcome to the CodeNexus! Discover the power of automation and elevate your productivity. Whether you're a seasoned developer, a business owner, or simply looking to streamline your daily tasks, our automation solutions have you covered.
                             </p>
-                            <a
+                            <Link
                                 href="#"
                                 className="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent"
                             >
                                 Explore Now
-                            </a>
+                            </Link>
                         </div>
                         <div className="p-8 mt-12 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3  justify-center">
                             <div className="h-48 flex flex-wrap content-center">
                                 <div>
                                     <img
                                         className="inline-block mt-28 hidden xl:block"
-                                        src="https://user-images.githubusercontent.com/54521023/116969935-c13d5b00-acd4-11eb-82b1-5ad2ff10fb76.png"
+                                        src={Logo}
                                     />
                                 </div>
                                 <div>

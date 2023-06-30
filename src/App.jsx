@@ -3,9 +3,10 @@ import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import Practice from "./pages/Practice";
+import PracticePage from "./pages/PracticePage";
 import styles from "./styles";
 import FormPage from "./pages/FormPage";
+import TablePage from "./pages/TablePage";
 const Layout = () => {
   return (
     <div>
@@ -30,8 +31,9 @@ const App = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/practice" element={<Practice />} />
+          <Route path="/practice" element={<PracticePage />} />
           <Route path="/practice/forms" element={<FormPage />} />
+          <Route path="/practice/tables" element={<TablePage />} />
         </Route>
       </Routes>
     </Router>
