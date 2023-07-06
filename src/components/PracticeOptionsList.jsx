@@ -1,5 +1,5 @@
 import React from 'react';
-import PracticeOptionsList from '../components/PracticeOptionsList';
+import PracticeOptionsList from './PracticeOptionsList';
 import formsImage from '../assets/pimages/forms.png';
 
 const PracticeOptionsList = () => {

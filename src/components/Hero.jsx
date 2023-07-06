@@ -19,7 +19,7 @@ const Hero = () => {
                                 Welcome to the CodeNexus! Discover the power of automation and elevate your productivity. Whether you're a seasoned developer, a business owner, or simply looking to streamline your daily tasks, our automation solutions have you covered.
                             </p>
                             <Link
-                                href="#"
+                                to="/practice"
                                 className="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent"
                             >
                                 Explore Now
