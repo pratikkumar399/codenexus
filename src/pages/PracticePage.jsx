@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import AuthPage from '../Auth';
-import Practice from './Practice';
+
 
 const PracticePage = () => {
     const [user, setUser] = useState(null);
@@ -11,11 +11,9 @@ const PracticePage = () => {
 
     return (
         <div>
-            {user ? (
-                <Practice />
-            ) : (
-                <AuthPage handleSignIn={handleSignIn} />
-            )}
+
+            <AuthPage handleSignIn={handleSignIn} />
+
         </div>
     );
 };

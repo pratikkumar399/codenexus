@@ -7,6 +7,7 @@ import PracticePage from "./pages/PracticePage";
 import styles from "./styles";
 import FormPage from "./pages/FormPage";
 import TablePage from "./pages/TablePage";
+import PracticeLogin from "./pages/PracticeLogin";
 const Layout = () => {
   return (
     <div>
@@ -24,6 +25,8 @@ const Layout = () => {
   );
 };
 
+
+
 const App = () => {
   return (
     <Router>
@@ -32,6 +35,7 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/practice" element={<PracticePage />} />
+          <Route path="/practicelogin" element={<PracticeLogin />} />
           <Route path="/practice/forms" element={<FormPage />} />
           <Route path="/practice/tables" element={<TablePage />} />
         </Route>

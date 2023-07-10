@@ -1,16 +1,20 @@
 import React from 'react';
 import { auth, provider } from './Firebase';
 import { signInWithPopup } from 'firebase/auth';
+import { useNavigate } from 'react-router-dom';
 import hero from './assets/hero.png';
-import { Link } from 'react-router-dom'
+
 
 const AuthPage = ({ handleSignIn }) => {
+    const navigate = useNavigate();
     const handleGoogleSignIn = () => {
         signInWithPopup(auth, provider)
             .then((result) => {
                 const user = result.user;
                 console.log(user);
                 handleSignIn(user); // Call the handleSignIn function passed as a prop
+                navigate('/practicelogin');
+                // history.push('/practicelogin');
             })
             .catch((err) => {
                 console.log(err);
