@@ -7,12 +7,12 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBxa5NCS-Z-29lHnfN3KBL8pGtS6bt29xI",
-    authDomain: "codenexusauth.firebaseapp.com",
-    projectId: "codenexusauth",
-    storageBucket: "codenexusauth.appspot.com",
-    messagingSenderId: "124819331694",
-    appId: "1:124819331694:web:689767b0406136da15247f"
+    apiKey: "AIzaSyACJDNSJBEr2rv-9_FgTPqNqksdruLpVbs",
+    authDomain: "codenexus-practice.firebaseapp.com",
+    projectId: "codenexus-practice",
+    storageBucket: "codenexus-practice.appspot.com",
+    messagingSenderId: "790740099718",
+    appId: "1:790740099718:web:d47db0ce2a772d86b32707"
 };
 
 // Initialize Firebase

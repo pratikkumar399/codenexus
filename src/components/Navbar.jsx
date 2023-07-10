@@ -1,46 +1,54 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../assets/logo.svg';
+import logo from '../assets/logo.svg'
 
-export default function Example() {
-    const [isNavOpen, setIsNavOpen] = useState(false);
+function Navbar() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const toggleNav = () => {
-        setIsNavOpen(!isNavOpen);
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
     };
 
     return (
-        <nav className="border-gray-200 bg-gray-50 dark:bg-gray-900 dark:border-gray-700">
+        <nav className="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <Link to="/" className="flex items-center">
-                    <img src={Logo} className="h-8 mr-3" alt="Flowbite Logo" />
+                    <img
+                        src={logo}
+                        className="h-12 mr-3"
+                        alt="Flowbite Logo"
+                    />
                     <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                         CodeNexus
                     </span>
                 </Link>
                 <button
-                    onClick={toggleNav}
-                    className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    data-collapse-toggle="navbar-solid-bg"
+                    type="button"
+                    className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                     aria-controls="navbar-solid-bg"
-                    aria-expanded={isNavOpen ? 'true' : 'false'}
+                    aria-expanded={isMenuOpen ? 'true' : 'false'}
+                    onClick={toggleMenu}
                 >
                     <span className="sr-only">Open main menu</span>
                     <svg
-                        className="w-6 h-6"
+                        className="w-5 h-5"
                         aria-hidden="true"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 17 14"
                     >
                         <path
-                            fillRule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                            clipRule="evenodd"
-                        ></path>
+                            stroke="currentColor"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M1 1h15M1 7h15M1 13h15"
+                        />
                     </svg>
                 </button>
                 <div
-                    className={`${isNavOpen ? 'block' : 'hidden'
+                    className={`${isMenuOpen ? 'block' : 'hidden'
                         } w-full md:block md:w-auto`}
                     id="navbar-solid-bg"
                 >
@@ -48,7 +56,7 @@ export default function Example() {
                         <li>
                             <Link
                                 to="/"
-                                className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                                className="block py-2 pl-3 pr-4 text-gray-900 rounded font-bold hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                                 aria-current="page"
                             >
                                 Home
@@ -57,15 +65,17 @@ export default function Example() {
                         <li>
                             <Link
                                 to="/practice"
-                                className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
-                                aria-current="page"
+                                className="block py-2 pl-3 pr-4 text-gray-900 rounded font-bold hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                             >
                                 Practice
                             </Link>
                         </li>
+
                     </ul>
                 </div>
             </div>
         </nav>
     );
 }
+
+export default Navbar;

@@ -1,58 +1,51 @@
-import React from 'react';
-import Logo from '../assets/logo.svg'
-import { Link } from 'react-router-dom';
-const Hero = () => {
+import { Link } from 'react-router-dom'
+
+
+export default function Example() {
     return (
-        <>
-            {/* component */}
-            <section>
-                <div className="bg-primary text-white py-20">
-                    <div className="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
-                        <div className="flex flex-col w-full lg:w-1/3 justify-center items-start p-8">
-                            <h1 className="text-3xl md:text-5xl p-2 text-yellow-300 tracking-loose">
-                                Code Nexus
-                            </h1>
-                            <h2 className="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-2">
-                                Automate and Learn
-                            </h2>
-                            <p className="text-sm md:text-base text-gray-50 mb-4">
-                                Welcome to the CodeNexus! Discover the power of automation and elevate your productivity. Whether you're a seasoned developer, a business owner, or simply looking to streamline your daily tasks, our automation solutions have you covered.
-                            </p>
-                            <Link
-                                to="/practice"
-                                className="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent"
-                            >
-                                Explore Now
+        <div className="bg-white">
+            <div className="relative isolate px-6 pt-14 lg:px-8">
+                <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+                    <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+                        <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                            Want to know more.{' '}
+                            <Link to="/practice" className="font-semibold text-indigo-600">
+                                <span className="absolute inset-0" aria-hidden="true" />
+                                Read more <span aria-hidden="true">&rarr;</span>
                             </Link>
                         </div>
-                        <div className="p-8 mt-12 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3  justify-center">
-                            <div className="h-48 flex flex-wrap content-center">
-                                <div>
-                                    <img
-                                        className="inline-block mt-28 hidden xl:block"
-                                        src={Logo}
-                                    />
-                                </div>
-                                <div>
-                                    <img
-                                        className="inline-block mt-24 md:mt-0 p-8 md:p-0"
-                                        src="https://user-images.githubusercontent.com/54521023/116969931-bedb0100-acd4-11eb-99a9-ff5e0ee9f31f.png"
-                                    />
-                                </div>
-                                <div>
-                                    <img
-                                        className="inline-block mt-28 hidden lg:block"
-                                        src="https://user-images.githubusercontent.com/54521023/116969939-c1d5f180-acd4-11eb-8ad4-9ab9143bdb50.png"
-                                    />
-                                </div>
-                            </div>
+                    </div>
+                    <div className="text-center">
+                        <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                            Pratice the flow of components
+                        </h1>
+                        <p className="mt-6 text-lg leading-8 text-gray-600">
+                            Welcome to the CodeNexus! Discover the power of automation and elevate your productivity. Whether you're a seasoned developer, a business owner, or simply looking to streamline your daily tasks, our automation solutions have you covered.
+                        </p>
+                        <div className="mt-10 flex items-center justify-center gap-x-6">
+                            <Link
+                                to="/practice"
+                                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                            >
+                                Get started
+                            </Link>
                         </div>
                     </div>
                 </div>
-            </section>
-        </>
+                <div
+                    className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+                    aria-hidden="true"
+                >
+                    <div
+                        className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+                        style={{
+                            clipPath:
+                                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+                        }}
+                    />
+                </div>
 
-    );
-};
-
-export default Hero;
+            </div>
+        </div>
+    )
+}
