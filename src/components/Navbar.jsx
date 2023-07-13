@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.svg'
+import logo from '../assets/logo1.png'
+
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,19 +9,15 @@ function Navbar() {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
-
     return (
         <nav className="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <Link to="/" className="flex items-center">
                     <img
                         src={logo}
-                        className="h-12 mr-3"
+                        className="h-16  mr-3"
                         alt="Flowbite Logo"
                     />
-                    <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                        CodeNexus
-                    </span>
                 </Link>
                 <button
                     data-collapse-toggle="navbar-solid-bg"

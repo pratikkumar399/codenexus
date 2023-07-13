@@ -4,6 +4,7 @@ import formsImage from '../assets/pimages/forms.png';
 import tableImage from '../assets/pimages/tables.png';
 import ecomm from '../assets/pimages/ecomm.png';
 import blogg from '../assets/pimages/blogg.png';
+import movie from '../assets/pimages/movies.png';
 const PracticePage = () => {
     const practiceOptions = [
         {
@@ -27,9 +28,15 @@ const PracticePage = () => {
         },
         {
             title: 'BloggersZone',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eleifend purus sit amet odio condimentum maximus. Morbi id urna sed metus varius pretium vel et velit. Sed ullamcorper eu dui ac fringilla. ',
+            description: 'A dynamic blog website built using NextJs, React, MongoDB, TailwindCSS, and deployed on Vercel.',
             imageUrl: blogg,
             link: 'https://bloggerszone.vercel.app/',
+        },
+        {
+            title: 'MovieWobbie',
+            description: 'A staic movie website built using HTML, CSS and deployed on Vercel.',
+            imageUrl: movie,
+            link: 'https://mern-blogapp-kusp.vercel.app/',
         }
 
     ];
