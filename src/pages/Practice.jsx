@@ -72,11 +72,11 @@ const PracticePage = () => {
 
             <h1 className="text-3xl text-center font-bold mb-4">Practice Projects</h1>
             <p className="text-lg text-black mb-8 font-serif">
-                Watching course and reading tutorials online will only get you so far. To become a great automation engineer, you’ll need a ton of practice. While most online courses provide the students with just the lectures and few course materials but to actually implement the newly acquired knowledge, they are left to scramble for themselves.
+                To become an exceptional automation engineer, online courses and tutorials are insufficient. What truly sets apart a great automation engineer is a ton of hands-on practice. Sadly, many online courses merely offer lectures and scarce course materials, leaving students struggling to apply their knowledge in real-life scenarios or interviews.
 
-                Due to lack of this practice, students struggle to implement the new learnings at their work or struggle with answering interview questions. But at Rahul Shetty Academy, we want to have our students really implement their new knowledge and skills on our dedicated live practice apps which we have developed exclusively for our students.
+                At <span style={{ color: 'orange', }}   >Code</span><span style={{ color: 'blue', }}  >Nexus</span>, we take a different approach. We understand the importance of practical implementation. Therefore, we provide our students with dedicated live practice apps tailored for various QA automation verticals such as UI/Web, Mobile Apps, and API services.
 
-                We have developed Live Practice apps for different verticals of QA automation like UI / Web, Mobile Apps and API services.
+                These exclusive apps empower our students to implement their newly acquired skills in a supportive environment. This hands-on experience enables them to confidently apply automation concepts in their workplace and excel in interviews. At <span style={{ color: 'orange', }}   >Code</span><span style={{ color: 'blue', }}  >Nexus</span>, we believe in the power of practice to nurture exceptional automation engineers, and our live practice apps play a pivotal role in achieving that goal.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
                 {practiceOptions.map((option) => (
