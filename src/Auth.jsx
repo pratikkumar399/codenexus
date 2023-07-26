@@ -22,8 +22,8 @@ const AuthPage = ({ handleSignIn }) => {
     };
 
     return (
-        <div className="bg-white">
-            <div className='relative isolate px-6 pt-14 lg:px-8' >
+        <div className="dark:bg-violet-100">
+            <div className='flex px-4 py-16  md:px-10 lg:px-32 ' >
                 <div className="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
                     <div className="mr-auto place-self-center lg:col-span-7">
                         <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-4xl xl:text-4xl dark:text-gray-900">

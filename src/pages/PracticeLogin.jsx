@@ -3,7 +3,7 @@ import Practice from './Practice';
 
 const PracticeLogin = () => {
     return (
-        <div>
+        <div className='dark: bg-violet-100'>
             <Practice />
         </div>
     )

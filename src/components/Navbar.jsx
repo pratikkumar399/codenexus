@@ -10,7 +10,7 @@ function Navbar() {
         setIsMenuOpen(!isMenuOpen);
     };
     return (
-        <nav className="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+        <nav className="border-gray-800 bg-gray-50  dark:border-gray-800">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <Link to="/" className="flex items-center">
                     <img
@@ -53,18 +53,18 @@ function Navbar() {
                         <li>
                             <Link
                                 to="/"
-                                className="block py-2 pl-3 pr-4 text-gray-900 rounded font-bold hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                className="block py-2 pl-3 pr-4 text-gray-900 rounded font-bold hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-black md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                                 aria-current="page"
                             >
-                                Home
+                                <span style={{ color: 'orange', }}   >Home</span>
                             </Link>
                         </li>
                         <li>
                             <Link
                                 to="/practice"
-                                className="block py-2 pl-3 pr-4 text-gray-900 rounded font-bold hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                className="block py-2 pl-3 pr-4 text-gray-900 rounded font-bold hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-black md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                             >
-                                Practice
+                                <span style={{ color: 'blue', }}   >Practice</span>
                             </Link>
                         </li>
 

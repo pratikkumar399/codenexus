@@ -8,6 +8,7 @@ import styles from "./styles";
 import FormPage from "./pages/FormPage";
 import TablePage from "./pages/TablePage";
 import PracticeLogin from "./pages/PracticeLogin";
+import InfinitePages from "./pages/InfinitePages";
 const Layout = () => {
   return (
     <div>
@@ -16,7 +17,7 @@ const Layout = () => {
         <Outlet />
       </div>
 
-      <div className={`bg-gray-900  ${styles.paddingX} ${styles.flexCenter}`}>
+      <div style={{ backgroundColor: '#8E7099' }} className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Footer />
         </div>
@@ -38,6 +39,7 @@ const App = () => {
           <Route path="/practicelogin" element={<PracticeLogin />} />
           <Route path="/practice/forms" element={<FormPage />} />
           <Route path="/practice/tables" element={<TablePage />} />
+          <Route path="/practice/grid" element={<InfinitePages />} />
         </Route>
       </Routes>
     </Router>
